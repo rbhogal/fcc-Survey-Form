@@ -2,11 +2,11 @@
 
 <html>
 
-  <!-- Title --> 
+  <!-- Title & Description --> 
   
 <head>
-    <h1 id="title">Survey Form Placeholder Text</h1>
-  <p id="description">Survey Description</p>
+    <h1 id="title">Parks and Recreation Department of Pawnee Survey</h1>
+  <p id="description">Survey for Potential Employee Candidates</p>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   
   <form id="survey-form" action="/submit answers">
    
-    <!-- Form Labels -->
+    <!-- Form Labels: Text for Personal Info -->
     
     <label id="name-label">
       <h3>Name</h3>
@@ -27,7 +27,17 @@
     </label>
     <label id="number-label">
       <h3>Age</h3>
-        <input id="number" type="number" required placeholder="Age" min="10" max="150" name ="personal-info">
+        <input id="number" type="number" required placeholder="Age" min="18" max="65" name ="personal-info">
+    </label>
+    <label>
+      <h3>What best describes your thoughts about government?</h3>
+       <select id="dropdown" placeholder="Select" name ="personal-info">
+         <option value = "0">Select</option>
+         <option value = "1">Government should intervene in the economy and provide a broad range of social services.</option>
+         <option value = "2">Government should operate on a state level and uphold restrictions on same-sex marriages.</option>
+         <option value = "3">Government should control the major means of production and ownership of property deemed public.</option>
+         <option value = "4">Government is a greedy piglet that suckles on a taxpayer's teat until they have sore chapped nipples.</option>     
+       </select>
     </label>
  <body>
 </form>
