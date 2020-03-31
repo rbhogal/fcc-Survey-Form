@@ -1,6 +1,8 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <html>
+
+  <!-- Title --> 
   
 <head>
     <h1 id="title">Survey Form Placeholder Text</h1>
@@ -8,17 +10,26 @@
 </head>
 
 <body>
+  
+  <!-- Survey Form -->
+  
   <form id="survey-form" action="/submit answers">
    
-   <h3 id="name">Name</h3>
-      <input type="text" required placeholder="Enter your name">
-
-    <h3 id="email">Email</h3>
-      <input type="text" required placeholder="Enter your email">
-
-    <h3 id="age">Age</h3>
-
-  </form>
-</body>
+    <!-- Form Labels -->
+    
+    <label id="name-label">
+      <h3>Name</h3>
+        <input id="name" type="text" required placeholder="Enter your name" name ="personal-info">
+    </label>
+    <label id="email-label">
+      <h3>Email</h3>
+        <input id="email" type="email" required placeholder="Enter your Email" name ="personal-info">
+    </label>
+    <label id="number-label">
+      <h3>Age</h3>
+        <input id="number" type="number" required placeholder="Age" min="10" max="150" name ="personal-info">
+    </label>
+ <body>
+</form>
   
 <html>
