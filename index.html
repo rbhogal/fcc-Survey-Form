@@ -1,5 +1,7 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+<!-- JS for Select All checkbox -->
+
 <script language="JavaScript">
 function toggle(source) {
   checkboxes = document.getElementsByName('pyramid');
@@ -11,7 +13,7 @@ function toggle(source) {
 
 <html>
                                             
-  <!-- Title & Description --> 
+<!-- Title & Description --> 
   
 <head>
     <h1 id="title">Parks and Recreation Department of Pawnee Survey</h1>
@@ -87,9 +89,17 @@ function toggle(source) {
       <label for="greatness"><input id="greatness" type="checkbox" name="pyramid" value="18">Greatness Itself: The best revenge</label><br>
       <label for="welfare"><input id="welfare" type="checkbox" name="pyramid" value="19">Welfare Avoidance</label><br>
       <label for="ships"><input id="ships" type="checkbox" name="pyramid" value="20">Old Wooden Sailing Ships: They're beautiful</label><br>
-      <input type="checkbox" onClick="toggle(this)" value="21"/>All of the above (select all)<br/>
-    
+      <input type="checkbox" onClick="toggle(this)" value="21"/>All of the above (select all)<br/><br><br>
   
+    <!-- Comment Box-->
+    
+    <h3>Any Comments or Suggestions?</h3>
+      <textarea name="comment" rows="8" cols="80" maxlength="500" placeholder="Enter your comment here..." required></textarea><br><br>
+
+    <!-- Submit -->
+    
+    <button type="submit" id="submit">Submit</button>
+ 
  <body>
 </form>
   
