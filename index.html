@@ -1,7 +1,16 @@
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<html>
+<script language="JavaScript">
+function toggle(source) {
+  checkboxes = document.getElementsByName('pyramid');
+  for(var i=0, n=checkboxes.length;i<n;i++) {
+    checkboxes[i].checked = source.checked;
+  }
+}
+</script>
 
+<html>
+                                            
   <!-- Title & Description --> 
   
 <head>
@@ -15,7 +24,7 @@
   
   <form id="survey-form" action="/submit answers">
    
-    <!-- Form Labels: Text for Personal Info -->
+    <!-- Labels: Text - Personal Info -->
     
     <label id="name-label">
       <h3>Name</h3>
@@ -29,16 +38,58 @@
       <h3>Age</h3>
         <input id="number" type="number" required placeholder="Age" min="18" max="65" name ="personal-info">
     </label>
-    <label>
-      <h3>What best describes your thoughts about government?</h3>
-       <select id="dropdown" placeholder="Select" name ="personal-info">
+
+    <!-- Label: Dropdown list - Thoughts on Government -->
+
+    <h3>What best describes your thoughts about government?</h3>
+      <label>
+       <select id="dropdown">
          <option value = "0">Select</option>
-         <option value = "1">Government should intervene in the economy and provide a broad range of social services.</option>
+         <option value = "1">Government should intervene in the economy and provide a broad range of social services.</option>s
          <option value = "2">Government should operate on a state level and uphold restrictions on same-sex marriages.</option>
          <option value = "3">Government should control the major means of production and ownership of property deemed public.</option>
          <option value = "4">Government is a greedy piglet that suckles on a taxpayer's teat until they have sore chapped nipples.</option>     
        </select>
     </label>
+    
+    <!-- Labels: Radio Buttons - Drink of Choice -->
+    
+    <h3>What is your drink of choice?</h3>
+      <label> 
+        <input type="radio" name="drink" value="incorrect">Any clear alcohol 
+      </label><br>
+      <label> 
+        <input type="radio" name="drink" value="very incorrect">Skim milk
+      </label><br>
+        <input type="radio" name="drink" value="correct">16-year-old Lagavulin Single Malt scotch
+      </label><br>
+    
+    <!-- Labels: Checkboxes - Swanson Pyramid of Greatness -->
+  
+    <h3>If you had to make a "Pyramid of Greatness," what would be on it? (Check all that apply)</h3>
+      <label for="teamwork"><input id="teamwork" type="checkbox" name="pyramid" value="1">Teamwork: But equally important -Selfishness: Take what's yours</label><br>
+      <label for="america"><input id="america" type="checkbox" name="pyramid" value="2">America: The only country that matters</label><br>
+      <label for="cursing"><input id="cursing" type="checkbox" name="pyramid" value="3">Cursing: There's only one bad word --taxes</label><br>
+      <label for="haircuts"><input id="haircuts" type="checkbox" name="pyramid" value="4">Three acceptable haircuts: High and tight, Crew Cut, and Buzz Cut</label><br>
+      <label for="proteins"><input id="proteins" type="checkbox" name="pyramid" value="5">Animal Proteins: 4-8 servings daily: Cow, pig, chicken, deer. (Fish for sport only. Fish meat is practically a vegetable)</label><br>
+      <label for="friends"><input id="friends" type="checkbox" name="pyramid" value="6">Friends: 1-3 is sufficient</label><br>
+      <label for="capitalism"><input id="capitalism" type="checkbox" name="pyramid" value="7">Capitalism: God's way of determining who is smart, and who is poor</label><br>
+      <label for="skim-milk"><input id="skim-milk" type="checkbox" name="pyramid" value="8">Skim Milk: Avoid it.</label><br>
+      <label for="fitness"><input id="fitness" type="checkbox" name="pyramid" value="9">Physical Fitness</label><br>
+      <label for="honor"><input id="honor" type="checkbox" name="pyramid" value="10">Honor</label><br>
+      <label for="wilderness"><input id="wilderness" type="checkbox" name="pyramid" value="11">Living in the Wilderness</label><br>
+      <label for="crying"><input id="crying" type="checkbox" name="pyramid" value="12">Crying: Acceptable at funerals and the Grand Canyon</label><br>
+      <label for="property"><input id="property" type="checkbox" name="pyramid" value="13">Property Rights</label><br>
+      <label for="frankness"><input id="frankness" type="checkbox" name="pyramid" value="14">Frankness: Cut the bullshit</label><br>
+      <label for="skim-milk2"><input id="skim-milk2" type="checkbox" name="pyramid" value="15">Skim Milk: Avoid it.</label><br>
+      <label for="weapons"><input id="weapons" type="checkbox" name="pyramid" value="16">Weapons</label><br>
+      <label for="woodworking"><input id="woodworking" type="checkbox" name="pyramid" value="17">Woodworking</label><br>
+      <label for="greatness"><input id="greatness" type="checkbox" name="pyramid" value="18">Greatness Itself: The best revenge</label><br>
+      <label for="welfare"><input id="welfare" type="checkbox" name="pyramid" value="19">Welfare Avoidance</label><br>
+      <label for="ships"><input id="ships" type="checkbox" name="pyramid" value="20">Old Wooden Sailing Ships: They're beautiful</label><br>
+      <input type="checkbox" onClick="toggle(this)" value="21"/>All of the above (select all)<br/>
+    
+  
  <body>
 </form>
   
