@@ -1,0 +1,79 @@
+html {
+    padding: 50px;
+  }
+  
+  body {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+  
+  #title {
+    text-align: center;
+    font-family: 'Crete Round', serif; 
+    font-size: 40px;
+    color: black;
+  }
+  
+  #description {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+  }
+  
+  #survey-form {
+    font-family: 'Raleway' sans-serif;
+    background-color: green;
+    border-radius: 5px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 40px;
+    
+     
+  }
+  
+  #name {
+    width: 770px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
+  
+  #email {
+    width: 770px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #number {
+    width: 770px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #dropdown {
+    width: 795px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  #textarea {
+    font-family: 'Raleway', sans-serif;
+    width: 774px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  
+  #submit {
+    width: 797px;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  
+  
